@@ -8,6 +8,7 @@ h1{
 .bar.bar-stable .title {
     background-color: #ffccff;
     color: black;
+    width: 100%;
 }
 
 img {
