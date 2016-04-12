@@ -34,8 +34,13 @@ angular.module('starter.controllers', [])
       })
 })
 
-.controller('AccountCtrl', function($scope) {
-  $scope.settings = {
-    enableFriends: true
-  };
+.controller('AccountCtrl', function($scope, $http) {
+  $scope.unicornUrl = "http://api.giphy.com/v1/gifs/search?&api_key=dc6zaTOxFJmzC&q=unicorn&limit=100"
+  $scope.unicornGifs = [];
+
+  $scope.unicorn = $http.get($scope.unicornUrl).success(function(data){
+    for(var i = 0; i < data.data.length; i++){
+      $scope.unicornGifs.push(data.data[i].images.original.url);
+    };
+  });
 });
