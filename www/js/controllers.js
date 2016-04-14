@@ -1,6 +1,6 @@
 angular.module('starter.controllers', [])
 
-.controller('DashCtrl', function($scope, $http) {
+.controller('TrendingCtrl', function($scope, $http) {
 
   $scope.trendingUrl = "http://api.giphy.com/v1/gifs/trending?api_key=dc6zaTOxFJmzC&limit=100"
   $scope.trendingGifs = [];
@@ -12,7 +12,7 @@ angular.module('starter.controllers', [])
   });
 })
 
-.controller('ChatsCtrl', function($scope, $http) {
+.controller('SearchCtrl', function($scope, $http) {
 
   $(".container").on("submit", ".searchForm", function(e){
         e.preventDefault();
@@ -34,7 +34,7 @@ angular.module('starter.controllers', [])
       })
 })
 
-.controller('AccountCtrl', function($scope, $http) {
+.controller('UnicornCtrl', function($scope, $http) {
   $scope.unicornUrl = "http://api.giphy.com/v1/gifs/search?&api_key=dc6zaTOxFJmzC&q=unicorn&limit=100"
   $scope.unicornGifs = [];
 

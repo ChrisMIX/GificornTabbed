@@ -45,7 +45,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     views: {
       'tab-trending': {
         templateUrl: 'templates/tab-trending.html',
-        controller: 'DashCtrl'
+        controller: 'TrendingCtrl'
       }
     }
   })
@@ -55,7 +55,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       views: {
         'tab-search': {
           templateUrl: 'templates/tab-search.html',
-          controller: 'ChatsCtrl'
+          controller: 'SearchCtrl'
         }
       }
     })
@@ -74,7 +74,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     views: {
       'tab-unicorn': {
         templateUrl: 'templates/tab-unicorn.html',
-        controller: 'AccountCtrl'
+        controller: 'UnicornCtrl'
       }
     }
   });
